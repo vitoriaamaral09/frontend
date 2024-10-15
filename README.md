@@ -1,5 +1,4 @@
-# frontend
-Projeto final de Frontend
+# PROJETO FINAL FRONTEND
 Equipe: Eunice, Katleen, Maria Laura, Patricia e Vitória.
 
 
