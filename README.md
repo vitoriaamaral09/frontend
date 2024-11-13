@@ -3,7 +3,7 @@ Equipe: Eunice, Katleen, Maria Laura, Patricia e Vitória.
 
 
 
-NOSSO TRABALHO SERÁ TIPO UM REPOSITÓRIO DE ARQUIVOS PARA CLIENTES DE CONTABILIDADE.
+NOSSO TRABALHO SERÁ TIPO UM REPOSITÓRIO DE ARQUIVOS PARA CLIENTES DE CONTABILIDADE USANDO A TECNOLOGIA REACT
 
 A primeira pagina terá acesso a dois Logins, um para o Usuário da Contabilidade e outro para o Cliente.
 
