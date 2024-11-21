@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { useState } from 'react';
 
 export function Login() {
@@ -40,9 +42,12 @@ export function Login() {
         />
       </div>
       <br />
-      <button onClick={logar} type="button" className="btn btn-info">
-        Entrar
-      </button>
+      <Link
+          to="/Pagina1"
+          className="inline-flex rounded-md bg-gray-100 p-4 text-base font-semibold hover:bg-gray-200 md:text-lg"
+        >
+          Entrar
+        </Link>
                
     </div>
   );

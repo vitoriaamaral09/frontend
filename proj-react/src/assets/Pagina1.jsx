@@ -1,6 +1,6 @@
-import { Card } from './rotas/Card'
+import { Card } from './Card'
 
-export function Pagina1 () {
+export default function Pagina1 () {
   return (      
       <div className="card-list">
         <Card
