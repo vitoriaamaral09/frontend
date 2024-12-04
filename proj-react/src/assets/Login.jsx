@@ -19,7 +19,8 @@ export function Login() {
 
   return (
     <div style={{ marginBottom: 32 }}>
-      <h3>Acesse sua conta</h3>
+      <h3>Acesse sua conta
+      </h3>
       <div>
         <input
           value={formData.usuário}
@@ -37,7 +38,7 @@ export function Login() {
           onChange={(event) =>
             setFormData({ ...formData, senha: event.target.value })
           }
-          type="varchar"
+          type="password"
           placeholder="Sua senha"
         />
       </div>
