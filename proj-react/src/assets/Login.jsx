@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
-
 import { useState } from 'react';
 
-export function Login() {
+export function Login({title, link}) {
   const [formData, setFormData] = useState({
         Usuário: 'Kat',
         Senha: '123ka',
@@ -44,12 +43,11 @@ export function Login() {
       </div>
       <br />
       <Link
-          to="/Pagina1"
+          to={link}
           className="inline-flex rounded-md bg-gray-100 p-4 text-base font-semibold hover:bg-gray-200 md:text-lg"
         >
-          Entrar
-        </Link>
-               
+          {title}
+      </Link>         
     </div>
   );
 }
