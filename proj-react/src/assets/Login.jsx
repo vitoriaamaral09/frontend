@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export function Login({title, link}) {
+export function Login({title, link, buttonTitle = "Acessar"}) {
   const [formData, setFormData] = useState({
         Usuário: 'Kat',
         Senha: '123ka',
@@ -18,7 +18,7 @@ export function Login({title, link}) {
 
   return (
     <div style={{ marginBottom: 32 }}>
-      <h3>Acesse sua conta
+      <h3>{title}
       </h3>
       <div>
         <input
@@ -46,7 +46,7 @@ export function Login({title, link}) {
           to={link}
           className="inline-flex rounded-md bg-gray-100 p-4 text-base font-semibold hover:bg-gray-200 md:text-lg"
         >
-          {title}
+          {buttonTitle}
       </Link>         
     </div>
   );

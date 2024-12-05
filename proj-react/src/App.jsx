@@ -6,12 +6,12 @@ function App(){
   return (
     <div className='login-container'>
       <Login 
-        title="Oi" 
+        title="Página Cliente" 
         link= "/Pagina1"
       />
       <Login 
-        title="Olá"
-        link= "/Pagina1"
+        title="Página Usuário"
+        link= "/Pagina2"
       />
     </div>
   );
