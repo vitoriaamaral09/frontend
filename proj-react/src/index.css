@@ -197,3 +197,30 @@ input[type="password"] {
 
 }
 
+
+.card-list {
+  width: 85%;
+  margin: 0 auto; /* Centraliza o contêiner */
+  background-color: white;
+  height: 300px;
+  border: 3px solid rgb(22, 25, 65);
+  border-radius: 10px;
+  color: rgb(22, 25, 65);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+
+  display: grid; /* Ativa Grid */
+  grid-template-columns: repeat(3, 1fr) repeat(2, 1fr); /* 3 colunas à esquerda e 2 à direita */
+  gap: 10px; /* Espaçamento entre itens */
+  padding: 40px; /* Adiciona espaçamento interno */
+
+}
+
+.card-list > * {
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Apenas para visualização */
+  padding: 10px; /* Ajuste interno nos itens */
+
+}
