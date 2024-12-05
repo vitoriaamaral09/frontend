@@ -16,7 +16,11 @@ const router = createBrowserRouter([
     path: "/Pagina1",
     element: <Pagina1 />,
   },
-
+  {
+    path: "/Pagina2",
+    element: <Pagina2 />,
+  },
+  
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
