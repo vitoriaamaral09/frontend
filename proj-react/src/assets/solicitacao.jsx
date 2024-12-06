@@ -21,7 +21,7 @@ export default function ListaSolicitacao() {
       form.reset();
       setErrorMessage('');
     } else {
-      setErrorMessage('Preencha todos os campos!');
+      setErrorMessage('Preencha o campo!');
     }
   }
 
