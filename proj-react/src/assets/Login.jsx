@@ -17,7 +17,7 @@ export function Login({title, link, buttonTitle = "Acessar"}) {
   }
 
   return (
-    <div style={{ marginBottom: 32 }}>
+    <div>
       <h3>{title}
       </h3>
       <div>
@@ -44,8 +44,7 @@ export function Login({title, link, buttonTitle = "Acessar"}) {
       <br />
       <Link
           to={link}
-          className="inline-flex rounded-md bg-gray-100 p-4 text-base font-semibold hover:bg-gray-200 md:text-lg"
-        >
+          >
           {buttonTitle}
       </Link>         
     </div>
