@@ -92,13 +92,13 @@ input[type="text"],
 input[type="email"],
 textarea,
 input[type="password"] {
-  width: 100%;
+  width: 90%;
   max-width: 350px;
   padding: 10px;
   margin-top: 10px;
   border: 3px solid var(--primary-color);
   border-radius: 8px;
-  background-color: rgba(200, 200, 200, 0.2);
+  background-color: white;
   color: #090909;
   font-size: 1.1em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -120,7 +120,7 @@ textarea:focus {
   gap: 5rem;
   width: 85%;
   max-width: 1200px;
-  padding: 5rem;
+  padding: 4rem;
   margin: 1rem auto;
 }
 
@@ -157,7 +157,7 @@ textarea:focus {
   background-color: rgba(240, 240, 240, 0.8);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Mantém o conteúdo ajustado verticalmente */
+  justify-content: center; 
   align-items: center;
   text-align: center;
 }
@@ -187,12 +187,14 @@ textarea:focus {
 
 .lista-documentos {
   display: flex;
-  flex-direction: column;
+  flex-direction: center;
   align-items: center; /* Centraliza o conteúdo */
+  justify-content: center;
   font-size: 22px;
   font-weight: bold;
   color: rgb(22, 25, 65);
   margin-bottom: 20px;
+  gap: 10px
 }
 
 .lista-documentos input[type="text"] {
@@ -207,7 +209,7 @@ textarea:focus {
 
 .lista-documentos button {
   background-color: var(--primary-color);
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
