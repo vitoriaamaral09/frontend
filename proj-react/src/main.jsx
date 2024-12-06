@@ -4,6 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import Pagina1 from './assets/Pagina1'
 import Pagina2 from './assets/Pagina2'
+
+
+import Dashboard from './assets/Dashboard'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,8 +25,12 @@ const router = createBrowserRouter([
     path: "/Pagina2",
     element: <Pagina2 />,
   },
-  
+  {
+    path: "Dashboard",
+    element: <Dashboard/>
+  }
 ]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <RouterProvider router={router} />

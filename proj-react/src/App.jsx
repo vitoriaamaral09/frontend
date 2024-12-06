@@ -11,7 +11,7 @@ function App(){
       />
       <Login 
         title="Página Usuário"
-        link= "/Pagina2"
+        link= "/Dashboard"
       />
     </div>
   );
