@@ -7,7 +7,7 @@
   --primary-color: #646cff;
   --secondary-color: #535bf2;
   --background-light: #ffffff;
-  --text-dark: #213547;
+  --text-dark: rgb(22, 25, 65);
   --border-color: #ddd;
   --focus-color: #2e10d6;
   --transition-duration: 0.3s;
@@ -94,7 +94,8 @@ textarea,
 input[type="password"] {
   width: 100%;
   max-width: 350px;
-  padding: 0.5em;
+  padding: 10px;
+  margin-top: 10px;
   border: 3px solid var(--primary-color);
   border-radius: 8px;
   background-color: rgba(200, 200, 200, 0.2);
@@ -147,6 +148,7 @@ textarea:focus {
   background-color: var(--background-light);
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
 }
 .card-list > div {
   padding: 20px;
@@ -161,17 +163,20 @@ textarea:focus {
 }
 
 .card-list button {
-  margin-top: auto; /* Move o botão para a base do cartão */
+  margin-top: 10px; /* Move o botão para a base do cartão */
   padding: 10px 20px;
   font-size: 16px;
+  
 }
 
 .card-list h2 {
   font-size: 20px;
+  display: flex;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   text-align: center;
   color: var(--text-dark);
+  color: rgb(22, 25, 65);
 }
 
 
@@ -214,6 +219,7 @@ textarea:focus {
 
 .lista-documentos button:hover {
   background-color: var(--secondary-color);
+  
 }
 
 /* Visibilidade Inicial das Páginas */
@@ -235,4 +241,20 @@ textarea:focus {
     font-size: 0.9em;
     padding: 0.5em 1em;
   }
+}
+.dashboard {
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  height: 200px;
+  margin-left: 30px;
+  font-size: 20px;
+  
+}
+.caixa-extra {
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  margin-top: auto;
+ 
 }
