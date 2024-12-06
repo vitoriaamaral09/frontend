@@ -133,19 +133,47 @@ textarea:focus {
 
 /* Lista de Documentos */
 .card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsividade ajustada */
+  gap: 20px; /* Espaçamento entre os cartões */
+  justify-content: center; /* Centraliza os cartões */
+  align-items: stretch;
   width: 85%;
   max-width: 800px;
   padding: 20px;
+  margin: 0 auto; /* Centraliza horizontalmente */
   border: 3px solid rgb(22, 25, 65);
   border-radius: 10px;
   background-color: var(--background-light);
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
 }
+.card-list > div {
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: rgba(240, 240, 240, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantém o conteúdo ajustado verticalmente */
+  align-items: center;
+  text-align: center;
+}
+
+.card-list button {
+  margin-top: auto; /* Move o botão para a base do cartão */
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.card-list h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--text-dark);
+}
+
 
 .card-list > * {
   border: 2px solid var(--border-color);
@@ -153,10 +181,39 @@ textarea:focus {
 }
 
 .lista-documentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo */
   font-size: 22px;
   font-weight: bold;
   color: rgb(22, 25, 65);
   margin-bottom: 20px;
+}
+
+.lista-documentos input[type="text"] {
+  margin-bottom: 8px; /* Espaçamento inferior */
+  width: 100%;
+  max-width: 300px; /* Limita a largura */
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+}
+
+.lista-documentos button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all var(--transition-duration);
+}
+
+.lista-documentos button:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Visibilidade Inicial das Páginas */
