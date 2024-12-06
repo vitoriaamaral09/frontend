@@ -1,4 +1,5 @@
 import { Card } from './Card'
+import ListaSolicitacao from './solicitacao';
 
 export default function Pagina1 () {
   return (      
@@ -23,6 +24,7 @@ export default function Pagina1 () {
           title="Emissão de guias"
           buttonLabel="Acessar Aqui"
         />
+        <ListaSolicitacao/>
       </div>
   );
 }
